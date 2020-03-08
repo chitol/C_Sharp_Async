@@ -1,0 +1,38 @@
+﻿<Window x:Class="C_Sharp_Async.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:C_Sharp_Async"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Name="bnTest" Content="Basic" Click="bnTest_Click"></Button>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="txtMessage"></TextBox>
+
+        <Button Grid.Row="1" Grid.Column="0" Name="bnTest1" Content="Param" Click="bnTest1_Click"></Button>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="txtMessage1"></TextBox>
+
+        <Button Grid.Row="2" Grid.Column="0" Name="bnTest2" Content="Param + Return" Click="bnTest2_Click"></Button>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="txtMessage2"></TextBox>
+
+        <Button Grid.Row="3" Grid.Column="0" Name="bnTest3" Content="Wait All" Click="bnTest3_Click"></Button>
+        <TextBox Grid.Row="3" Grid.Column="1" Name="txtMessage3"></TextBox>
+
+
+    </Grid>
+</Window>
